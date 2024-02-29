@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Planetas</title>
+    <style>
+        #canvas-container {
+            display: flex;
+        }
+
+        #canvas-container canvas {
+            border: 1px solid black;
+            margin-right: 20px;
+        }
+
+        #sidebar {
+            width: 200px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        #planet-form input {
+            margin-bottom: 10px;
+        }
+
+        #botao-pause{
+            background-color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="canvas-container">
+        <canvas id="planetCanvas"></canvas>
+        <div id="sidebar">
+            <h2>Criar Planeta</h2>
+            <div id="planet-form">
+                <label for="vx">Velocidade em x:</label><br>
+                <input type="number" id="vx" name="vx" value="0"><br>
+
+                <label for="vy">Velocidade em y:</label><br>
+                <input type="number" id="vy" name="vy" value="0"><br>
+
+                <label for="massa">Massa:</label><br>
+                <input type="number" id="massa" name="massa" value="10"><br>
+
+            </div>
+            <button id="botao-pause" onclick="pausar()">pausar</button>
+            <button onclick="controller.reset()">reset</button>
+        </div>
+    </div>
+
+    <script src="js/Planeta.js"></script>
+</body>
+</html>
