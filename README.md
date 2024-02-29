@@ -27,7 +27,7 @@ O projeto ainda está em desenvolvimento e algumas funcionalidades planejadas in
 
 Para usar o sandbox planetário, siga estas etapas:
 
-1. Abra o arquivo `index.html` em seu navegador.
+1. Acesse este [link](https://citeli-py.github.io/Planet-Sandbox/).
 2. Use os controles fornecidos para adicionar planetas à simulação.
 3. Observe as interações gravitacionais entre os planetas.
 
